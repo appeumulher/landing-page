@@ -1,9 +1,26 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#263a32">
-<meta name="description" content="Um percurso de reflexão para se reconhecer de novo, recuperar seus critérios e fazer escolhas com mais clareza. Comece por você.">
-<title>eu, mulher. — Comece por você</title><link rel="icon" href="./favicon.svg"><link rel="stylesheet" href="./style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#263a32">
+<meta name="description" content="Um primeiro espaço para se ouvir. Experimente cinco perguntas gratuitas do eu, mulher. e volte sua atenção para o que você sente, precisa e deseja.">
+<title>eu, mulher. — Um primeiro espaço para se ouvir</title>
+<style>
+:root{--paper:#f9f9f3;--ink:#263a32;--muted:#5b665e;--lime:#e6f2a1;--line:#dce0d3;--serif:Georgia,'Times New Roman',serif}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Arial,Helvetica,sans-serif}button,a,input,summary{-webkit-tap-highlight-color:transparent}a{color:inherit}button{font:inherit;cursor:pointer}button:disabled{cursor:not-allowed;opacity:.42}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #617444;outline-offset:5px}header,main,footer{max-width:1160px;margin:auto}header{padding:25px 34px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.brand{font:30px/1.2 var(--serif);letter-spacing:-1.2px;text-decoration:none}.brand i{color:#6f7b43;font-style:normal}.header-note{font-size:12px;letter-spacing:.06em;color:var(--muted)}.hero{padding:64px 34px 48px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}.intro{padding-top:14px;position:relative}.eyebrow{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin:0 0 20px;display:flex;gap:10px;align-items:center}.eyebrow:before{content:'';width:22px;height:1px;background:currentColor}h1,h2,h3,p{margin-top:0}h1{font:clamp(38px,4.4vw,58px)/1.08 var(--serif);letter-spacing:-1.9px;margin-bottom:23px;max-width:530px}h1 em{font-weight:400;color:#617444}h2{font:30px/1.18 var(--serif);letter-spacing:-.6px}h3{font:23px/1.25 var(--serif)}.lead{font-size:17px;line-height:1.65;max-width:430px;margin-bottom:13px}.explain{color:var(--muted);font-size:14px;max-width:420px}.cta{display:inline-flex;align-items:center;justify-content:center;gap:18px;border:0;background:var(--ink);color:white;padding:16px 22px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;min-height:52px;transition:background .15s}.cta:hover:not(:disabled){background:#3c5144}.hero-cta{margin-top:12px}.arrow{font-size:19px;font-weight:400}.micro{font-size:11px;line-height:1.5;color:var(--muted);margin:11px 0 0}.landscape{width:100%;height:92px;display:block;margin-top:30px;border-radius:45% 45% 8px 8px;opacity:.8}.quiz{background:#fffef9;border:1px solid var(--line);border-radius:18px;padding:29px 28px 24px;box-shadow:0 16px 50px #263a3209;scroll-margin-top:22px;position:relative}.quiz-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:15px}.free{background:#eff3de;border-radius:20px;padding:5px 9px;color:#455a35;white-space:nowrap}.progress{display:flex;gap:5px;margin:0 0 25px}.progress span{height:3px;background:#e6e9df;flex:1;border-radius:2px}.progress .done{background:#7a8a5b}fieldset{border:0;padding:0;margin:0;min-width:0}legend{font:27px/1.23 var(--serif);letter-spacing:-.45px;margin-bottom:10px;padding:0;width:100%}.hint{font-size:12px;color:var(--muted);margin-bottom:18px}.choices{display:grid;gap:9px}.choice{display:flex;gap:11px;align-items:center;padding:13px 14px;border:1px solid #dce0d3;border-radius:8px;font-size:13px;line-height:1.45;cursor:pointer;min-height:51px;background:white}.choice:hover{border-color:#7b8a65}.choice:has(input:checked){border-color:#6c8150;background:#f0f4df}.choice:has(input:focus-visible){outline:2px solid #617444;outline-offset:2px}input[type=radio]{accent-color:#52683d;flex:0 0 16px;width:16px;height:16px;margin:0}.actions{display:flex;align-items:center;gap:15px;margin-top:20px}.actions .cta{flex:1;padding:14px}.text-button{border:0;background:none;color:var(--muted);font-size:12px;padding:10px 0;text-decoration:underline;text-underline-offset:3px}.skip{display:block;margin:7px auto 0;font-size:11px;text-decoration:none}.privacy{text-align:center;margin-top:14px;font-size:10px;color:var(--muted)}.value{margin:0 34px;padding:30px 0 34px;border-top:1px solid var(--line);display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:35px}.value h2{font-size:26px;margin:0}.value h3{font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:0;margin-bottom:5px}.value p{font-size:12px;color:var(--muted);margin:0;line-height:1.6}.faq{margin:0 34px 28px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:30px}.faq details{padding:16px 0;border-bottom:1px solid var(--line);font-size:12px}.faq summary{cursor:pointer;font-weight:600}.faq p{margin:12px 0 0;color:var(--muted);max-width:450px}footer{border-top:1px solid var(--line);padding:20px 34px 24px;display:flex;gap:20px;justify-content:space-between;align-items:center}footer .brand{font-size:24px}footer p{font-size:10px;color:var(--muted);margin:0;text-align:right}.reflection{padding:20px;background:#f0f3e5;border-radius:10px;margin:18px 0}.reflection p{font:23px/1.4 var(--serif);margin:0}.reflection .label{font:9px/1.5 Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;color:var(--muted)}.result-lead{font-size:13px;color:var(--muted)}.result h2{margin-bottom:12px}.result h3{font-size:25px;margin:22px 0 9px}.includes{font-size:13px;color:var(--muted);padding-left:19px;margin:0 0 18px}.result .cta{display:flex;width:100%;gap:10px}.result details{font-size:12px;margin-top:19px;color:var(--muted)}.result summary{cursor:pointer}.result ol{padding-left:18px}.result li{margin:9px 0}.fine{font-size:11px;color:var(--muted)}[tabindex='-1']:focus{outline:none}.noscript{padding:24px}
+@media(min-width:1000px){.hero{min-height:678px}.quiz{min-height:540px}}
+@media(max-width:760px){header{padding:20px 22px}.brand{font-size:27px}.header-note{font-size:9px;letter-spacing:.02em}.hero{grid-template-columns:1fr;gap:27px;padding:30px 22px}.intro{padding:0}.eyebrow{font-size:9px;margin-bottom:16px}h1{font-size:41px;letter-spacing:-1.4px;max-width:510px;margin-bottom:18px}.lead{font-size:15px;margin-bottom:10px}.explain{font-size:13px;margin-bottom:4px}.hero-cta{margin-top:15px;width:100%}.micro{text-align:center;font-size:10px}.landscape{display:none}.quiz{padding:22px 20px;border-radius:13px}.quiz-meta{font-size:9px}.progress{margin-bottom:22px}legend{font-size:26px}.choice{font-size:13px;padding:13px 12px}.value{margin:0 22px;grid-template-columns:1fr 1fr;gap:20px;padding:26px 0}.value>div:first-child{grid-column:1/-1}.value h2{font-size:27px}.faq{margin:0 22px 22px;display:block}.faq details{padding:15px 0}footer{padding:19px 22px;align-items:start}footer p{max-width:180px;font-size:9px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Revisão: foto original na primeira dobra e demonstração com cinco perguntas. */
+.hero{grid-template-columns:1.2fr .8fr;gap:60px;min-height:0;padding:40px 60px 38px;align-items:center}
+.intro{padding:0}.portrait{margin:0;justify-self:end;width:100%;max-width:330px}.portrait img{display:block;width:100%;height:auto;max-height:410px;object-fit:cover;object-position:center 38%;border-radius:110px 110px 12px 12px}
+h1{font-size:clamp(38px,4vw,53px)}.hero .lead{font-size:16px}.hero .micro{text-align:left;font-size:10px}
+.demo-layout{margin:0 60px 30px;padding-top:32px;border-top:1px solid var(--line);display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}.demo-intro{padding-top:20px}.demo-intro h2{font-size:36px;line-height:1.15}.demo-intro h2 em{color:#617444}.demo-intro p:not(.eyebrow){font-size:14px;color:var(--muted);max-width:290px}.demo-note{display:block;font-size:11px;color:var(--muted);border-left:2px solid #cad3aa;padding-left:14px;margin-top:26px}.quiz{min-height:0}.faq{margin-left:60px;margin-right:60px}.result .report-section{border-top:1px solid var(--line);padding:20px 0 0;margin-top:20px}.report-section h3{font:22px/1.25 var(--serif);margin:0 0 9px}.report-section p{font-size:14px;margin-bottom:10px}.section-label{display:block;font-size:9px;letter-spacing:.14em;color:#617444;margin-bottom:10px}.result .reflection p{font-size:24px}.result .reflection .label{font-size:9px}.next-step{background:#f8f6ee;border-radius:8px;padding:17px;margin-top:18px}.next-step p{font-size:14px;margin:0}.next-step h3{margin:0 0 8px;font-size:23px}.offer{border-top:1px solid var(--line);margin-top:22px;padding-top:1px}.offer p{font-size:13px;color:var(--muted)}.offer .micro{font-size:11px}.report-source{font-size:10px;color:var(--muted);margin-top:8px}.result-lead{font-size:14px}.quiz:has(.result){scroll-margin-top:20px}
+@media(max-width:760px){.hero{padding:26px 22px 28px;gap:0 18px;grid-template-columns:1fr 114px;align-items:start}.intro{display:contents}.hero .eyebrow{grid-column:1/-1;grid-row:1;font-size:8px;margin-bottom:14px}.hero h1{grid-column:1/-1;grid-row:2;font-size:39px;margin-bottom:20px}.hero .lead{grid-column:1;grid-row:3;font-size:14px;line-height:1.6;margin:0;padding-top:9px}.portrait{grid-column:2;grid-row:3;max-width:114px;align-self:center}.portrait img{height:154px;border-radius:55px 55px 8px 8px;object-position:center 30%}.hero .explain{grid-column:1/-1;grid-row:4;font-size:13px;margin:18px 0 0}.hero-cta{grid-column:1/-1;grid-row:5;margin-top:17px}.hero .micro{grid-column:1/-1;grid-row:6;text-align:center;font-size:9px}.demo-layout{display:block;margin:0 22px 24px;padding-top:25px}.demo-intro{padding:0}.demo-intro h2{font-size:29px;margin-bottom:10px}.demo-intro h2 br{display:none}.demo-intro h2 br:after{content:' '}.demo-intro h2 em{display:block}.demo-intro p:not(.eyebrow){font-size:13px;max-width:none}.demo-intro p:nth-of-type(2),.demo-note{display:none}.demo-intro .eyebrow{margin-bottom:10px}.demo-layout .quiz{margin-top:18px}.faq{margin-left:22px;margin-right:22px}.result .reflection p{font-size:23px}.result .reflection .label{font-size:9px}.result .cta{font-size:13px}.result .report-section p{font-size:13px}}
+@media(max-width:360px){.hero{grid-template-columns:1fr 96px;gap:0 12px}.hero h1{font-size:35px}.hero .lead{font-size:13px;padding-top:0}.portrait img{height:144px}.hero .micro{font-size:8px}}
+
+</style>
+<link rel="icon" href="./favicon.svg">
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -18,51 +35,111 @@ fbq('init', '1105939441904105');
 fbq('track', 'PageView');
 </script>
 <!-- End Meta Pixel Code -->
+
 </head>
 <body>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1105939441904105&ev=PageView&noscript=1"
-/></noscript>
-<header class="nav"><a class="brand" href="#inicio" aria-label="Eu, mulher, início">eu<span>,</span> mulher<span class="brand-dot">.</span></a><nav aria-label="Navegação principal"><a href="#como-funciona">Como funciona</a><a href="#panorama">Seu panorama</a><a class="nav-cta" href="#convite">Quero começar por mim</a></nav></header>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1105939441904105&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<header><a class="brand" href="#inicio">eu, mulher<i>.</i></a><span class="header-note">um primeiro espaço para se ouvir</span></header>
 <main>
-<section id="inicio" class="hero">
-<div class="hero-copy"><p class="eyebrow"><span class="line"></span> VOCÊ, ANTES DE QUALQUER RELACIONAMENTO</p>
-<h1>O que você não precisa para voltar a <em>se sentir inteira?</em></h1>
-<div class="hero-description"><p>Talvez você tenha saído de uma relação e ainda carregue partes dela.</p><p>Talvez esteja em uma relação que já não combina com quem você é.</p><p>Ou talvez esteja esperando que o amor resolva uma falta que, no fundo, pede a sua própria presença.</p><p>Em meio a tanta opinião, comparação e promessa de felicidade pronta, existe uma pergunta que merece silêncio:</p></div>
-<p class="intro">como está a sua relação com você?</p>
-<p class="hero-description">O eu, mulher. é um percurso de reflexão para mulheres que desejam se reconhecer de novo, recuperar seus critérios e fazer escolhas que não as abandonem pelo caminho.</p>
-<a class="button primary" href="#convite">Quero começar por mim</a><p class="micro">Sem julgamento. Sem fórmulas para conquistar alguém. Sem exigir que você resolva tudo hoje.</p></div>
-<div class="hero-visual"><img src="./portrait.png" alt="Mulher em um momento tranquilo de reflexão, iluminada pela luz natural" width="1024" height="1280"><div class="photo-label"><span>01 / O PONTO DE PARTIDA</span><p>A sua história é maior<br>que esse relacionamento.</p></div></div>
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+<div class="intro">
+<p class="eyebrow">Agora, um pouco de atenção para você</p>
+<h1 id="hero-title">Você também merece a atenção <em>que dá ao outro.</em></h1>
+<p class="lead">Você pode sentir falta de alguém e ainda cuidar de você. Seus gostos, vontades e necessidades também merecem espaço.</p>
+<p class="explain">O <strong>eu, mulher.</strong> propõe cinco perguntas para reconhecer o que você sente e encontrar um primeiro cuidado possível.</p>
+<a class="cta hero-cta" id="start" href="#experimente">Fazer demonstração grátis <span class="arrow" aria-hidden="true">→</span></a>
+<p class="micro">Teste gratuito, sem cadastro, sem pagamento.</p>
+
+</div>
+<figure class="portrait"><img src="./portrait.png" width="1122" height="1402" alt="Mulher de cabelos cacheados em um momento tranquilo de reflexão" fetchpriority="high"></figure>
 </section>
-<div class="statement-band"><p>Porque se ouvir não significa ter todas as respostas.<br><strong>Significa parar de se abandonar enquanto procura por elas.</strong></p><span class="asterisk" aria-hidden="true">✳</span></div>
-<section class="section recognition" id="se-reconhece">
-<div><p class="eyebrow">QUANDO TUDO PARECE MISTURADO</p><h2>Talvez seja falta de <em>espaço para você.</em></h2><p>Quando você passa muito tempo se adaptando, esperando, tentando ser escolhida ou colocando suas necessidades depois das de todo mundo, pode ficar difícil perceber o que realmente quer.</p><p>O que propomos aqui é: lembrar que sua vida, seus desejos, seus limites e sua companhia também merecem prioridade.</p></div>
-<div class="thoughts"><article><span>01</span><p>Às vezes isso aparece como saudade de alguém.</p></article><article><span>02</span><p>Às vezes como medo de ficar só.</p></article><article><span>03</span><p>Às vezes como a sensação de que uma nova relação finalmente vai completar o que está faltando.</p></article></div>
+<section class="demo-layout" aria-label="Experimente o eu, mulher."><div class="demo-intro"><p class="eyebrow">Comece por aqui</p><h2>Cinco perguntas. <br>Um primeiro olhar <br><em>para você.</em></h2><p>Sobre o que você sente, o que tem feito falta e o espaço que suas vontades encontram na rotina.</p><p>Ao final, receba uma reflexão a partir das suas respostas e um pequeno passo para experimentar.</p><span class="demo-note">Escolha o que fizer sentido.<br>Você também pode pular perguntas.</span></div>
+<section class="quiz" id="experimente" aria-label="Demonstração gratuita com cinco perguntas"><div id="quiz-content"></div><noscript><p class="noscript">Ative o JavaScript para responder às cinco perguntas. Se preferir, <a href="https://pay.kiwify.com.br/FT14oCn">conheça o acesso completo na página de compra</a>.</p></noscript></section>
 </section>
-<section class="section recognition" id="percurso">
-<div><p class="eyebrow">UM PERCURSO, NÃO UMA RESPOSTA PRONTA</p><h2>Um tempo breve para se escutar <em>com mais honestidade.</em></h2><p>O percurso foi criado para ajudar você a sair do automático e olhar para o seu momento com mais clareza.</p><p>Não é um teste que define quem você é.</p><p>Não é uma resposta pronta sobre ficar, voltar ou ir embora.</p><p>É um momento guiado para que sua próxima escolha tenha mais de você nela.</p></div>
-<div><p>Você vai responder a perguntas que convidam a perceber:</p><ul class="benefits"><li>o que tem ocupado espaço demais dentro de você;</li><li>quais necessidades você tem deixado para depois;</li><li>o que procura nas relações e o que deseja preservar em si;</li><li>quais escolhas podem aproximar você da vida que quer construir.</li></ul></div>
-</section>
-<section id="como-funciona" class="section how">
-<div class="section-top"><div><p class="eyebrow">NO SEU TEMPO</p><h2>Como <em>funciona</em></h2></div></div>
-<div class="steps"><article><span class="step-num">01</span><h3>Escolha por onde começar</h3><p>Você encontra o caminho que mais conversa com o seu momento: uma relação passada, uma relação atual ou a vontade de construir uma vida que se conecta com você.</p></article><article><span class="step-num">02</span><h3>Responda no seu ritmo</h3><p>O questionário conduz uma reflexão direta, sensível e sem necessidade de expor detalhes que você não queira compartilhar.</p></article><article><span class="step-num">03</span><h3>Receba seu panorama</h3><p>Ao final, suas respostas formam uma leitura organizada do seu momento, com pontos para observar, necessidades que merecem cuidado e perguntas para levar com você.</p></article></div>
-</section>
-<section id="panorama" class="section panorama">
-<div class="panorama-copy"><p class="eyebrow">COM VOCÊ NO CENTRO</p><h2>O que você pode levar <em>desse percurso</em></h2><p>Mais do que uma conclusão, você recebe um ponto de apoio para se reencontrar quando tudo parece confuso.</p><p>Seu panorama ajuda a perceber:</p><ul class="benefits"><li>onde você pode estar se deixando em segundo plano;</li><li>o que precisa de mais cuidado e proteção na sua vida;</li><li>padrões que merecem ser vistos com calma;</li><li>possibilidades de um próximo passo mais alinhado com você.</li></ul><p class="subtle">Porque se ouvir não significa ter todas as respostas.<br>Significa parar de se abandonar enquanto procura por elas.</p></div>
-<div class="report"><div class="report-heading"><span class="brand mini">eu, mulher.</span><span>EXEMPLO ILUSTRATIVO</span></div><p class="report-kicker">SEU PANORAMA INDIVIDUAL</p><h3>O que merece<br>a sua atenção agora</h3><div class="report-block"><span>O SENTIMENTO</span><p>Você descreveu saudade e vontade de se sentir acolhida.</p></div><div class="report-block"><span>A SUA NECESSIDADE</span><p>Ter presença e respeito, sem deixar seus limites em segundo plano.</p></div><div class="report-note"><span>UMA PERGUNTA PARA LEVAR</span><p>“Se eu não precisasse decidir hoje, o que faria para cuidar de mim?”</p></div><p class="report-footer">Uma reflexão, não um diagnóstico ou uma recomendação de reconciliação.</p></div>
-</section>
-<section class="manifesto"><p class="eyebrow">NÃO EXISTE UM JEITO ÚNICO DE SER MULHER</p><h2>Você pode amar <em>sem se perder.</em></h2><p>Você pode desejar companhia sem acreditar que ela define o seu valor.</p><p>Pode sentir saudade sem transformar esse sentimento em uma ordem.</p><p>Pode querer viver uma relação e ainda assim continuar sendo o centro da própria vida.</p><p>O eu, mulher. não existe para ensinar você a esquecer alguém.</p><p>Existe para ajudá-la a voltar a reconhecer a mulher que existe para além de qualquer relação.</p></section>
-<section id="convite" class="invitation"><span class="eyebrow">UM PRIMEIRO ESPAÇO PARA SE OUVIR</span><h2>Experimente <em>antes de decidir.</em></h2><p>Você pode fazer uma breve simulação com três perguntas e entender se este é um bom momento para esse tipo de reflexão.</p><button class="button primary" id="open-demo">Experimentar a demonstração</button><p class="micro">Leva poucos minutos. Sem cadastro e sem cobrança nesta etapa.</p></section>
-<section id="acesso-completo" class="section recognition"><div><p class="eyebrow">SEU PRÓXIMO PASSO</p><h2>Quando você quiser seguir, o percurso completo <em>estará à sua espera.</em></h2></div><div><p>O acesso completo inclui o questionário interativo e um panorama individual do seu momento, para você revisitar sempre que precisar recuperar clareza.</p><p>Ao final, você também recebe uma seleção de conteúdos públicos em vídeo feitos por profissionais da área, para aprofundar temas que podem surgir durante a reflexão.</p><a class="button primary" href="https://pay.kiwify.com.br/FT14oCn">Quero conhecer o percurso completo</a><p class="micro">Uma experiência de autoconhecimento. Não substitui psicoterapia ou acompanhamento profissional.</p></div></section>
-<section class="section faq"><div><p class="eyebrow">PARA CONHECER COM TRANQUILIDADE</p><h2>Perguntas <em>frequentes</em></h2></div><div class="questions">
-<details><summary>O percurso vai me dizer se devo terminar ou voltar para alguém?</summary><p>Não. Ele não decide por você. A proposta é ajudar você a enxergar sentimentos, necessidades e limites com mais clareza, para que sua escolha seja mais consciente.</p></details>
-<details><summary>É só para quem viveu um término?</summary><p>Não. O pós-término é uma das experiências possíveis, mas o percurso também é para quem sente que se afastou de si, se perde nas relações ou quer recuperar mais autonomia emocional.</p></details>
-<details><summary>Preciso contar detalhes íntimos?</summary><p>Não. Você responde apenas ao que fizer sentido compartilhar. A experiência foi pensada para ser respeitosa e centrada no seu momento.</p></details>
-<details><summary>Isso substitui terapia?</summary><p>Não. O eu, mulher. é uma ferramenta de reflexão e autoconhecimento; não faz diagnóstico e não substitui apoio psicológico profissional.</p></details>
-<details><summary>Posso experimentar antes?</summary><p>Sim. A demonstração apresenta três perguntas para você sentir a proposta antes de escolher o percurso completo.</p></details>
-</div></section>
+<section class="faq" aria-label="Dúvidas frequentes"><details><summary>É só para quem terminou uma relação?</summary><p>Não. Também é para quem quer reconhecer seus gostos, necessidades e desejos para além de uma relação.</p></details><details><summary>O que acontece depois das cinco perguntas?</summary><p>Você recebe uma leitura inicial das suas respostas, uma pergunta para aprofundar e um pequeno passo possível. Depois, pode escolher o percurso completo. O botão leva à página de compra, onde aparecem o valor e as condições. A demonstração não gera cobrança.</p></details></section>
 </main>
-<footer><a class="brand" href="#inicio">eu, mulher.</a><p>Clareza para escolher. Espaço para ser.</p><span>Ferramenta de reflexão. Não substitui terapia.</span></footer>
-<dialog id="demo" aria-labelledby="demo-title"><button class="close" id="close-demo" aria-label="Fechar demonstração">×</button><div id="demo-content"></div></dialog><script src="./app.js"></script>
+<footer><a class="brand" href="#inicio">eu, mulher<i>.</i></a><p>Uma ferramenta de reflexão e autoconhecimento.<br>Não faz diagnóstico nem substitui terapia.</p></footer>
+<script>
+'use strict';
+const checkout='https://pay.kiwify.com.br/FT14oCn';
+const questions=[
+{title:'Quando você olha para o seu momento, o que mais aparece?',options:['Sinto saudade de alguém e isso tem ocupado meus pensamentos.','Tenho sentido falta de fazer coisas que são minhas.','A ideia de ficar sem uma relação me inquieta.','Quero me conhecer melhor, mesmo sem uma grande angústia.']},
+{title:'O que você mais gostaria de sentir agora?',options:['Acolhimento: ter espaço para sentir e ser ouvida.','Liberdade: poder ser eu e ter vontades próprias.','Confiança: levar minhas necessidades a sério nas escolhas.','Tranquilidade: não precisar resolver tudo de uma vez.']},
+{title:'O que você faz por prazer, sem precisar agradar a alguém?',options:['Tenho atividades de que gosto e reservo tempo para elas.','Sei do que gosto, mas quase sempre deixo para depois.','Costumo escolher pensando no que os outros preferem.','Ainda estou descobrindo o que gosto de fazer por mim.']},
+{title:'O que mais dificulta reservar um espaço para você?',options:['Meus pensamentos voltam para uma relação ou para alguém.','As vontades dos outros costumam vir primeiro.','Minha rotina deixa pouco tempo ou energia disponíveis.','Ainda não sei por onde começar.']},
+{title:'Qual pequeno passo você gostaria de experimentar?',options:['Reservar um momento para algo de que gosto.','Perceber uma vontade ou um limite que quero respeitar.','Me aproximar de alguém com quem me sinto acolhida.','Escrever um pouco para entender o que estou sentindo.']}
+];
+const answers=Array(questions.length).fill(null);let step=0;
+const feeling=[
+'Você contou que a saudade tem ocupado seus pensamentos. Ela pode ter lugar sem que todo o seu cuidado fique à espera de outra pessoa.',
+'Você contou que sente falta de fazer coisas que são suas. Esse desejo merece espaço, mesmo que você ainda não saiba exatamente o que retomar.',
+'Você contou que a ideia de ficar sem uma relação traz inquietação. Querer companhia pode conviver com o desejo de construir uma rotina que também faça sentido para você.',
+'Você chegou com vontade de se conhecer melhor. Não é preciso esperar uma grande angústia para prestar atenção ao que gosta, sente e deseja.'
+];
+const needs=[
+'Você também escolheu acolhimento. Uma direção possível é perceber onde pode ser ouvida sem precisar justificar ou apressar o que sente.',
+'Você escolheu liberdade para ser você. Vale observar quais preferências suas encontram espaço nas pequenas escolhas do dia.',
+'Você escolheu confiança nas próprias escolhas. Reconhecer uma necessidade sua pode ser um começo, antes de decidir o que fazer.',
+'Você escolheu tranquilidade. Talvez este momento peça espaço para observar, sem transformar cada sentimento em uma decisão imediata.'
+];
+const space=[
+'Você já reserva momentos para o que gosta. Esse espaço é algo que pode preservar, inclusive quando uma relação ocupa seus pensamentos.',
+'Você reconhece o que gosta, mas costuma deixar para depois. Seu próximo passo pode começar por dar lugar a uma vontade que já existe.',
+'Você percebe que costuma considerar primeiro as preferências dos outros. Isso abre uma pergunta útil: sua vontade também está sendo consultada?',
+'Você está descobrindo o que gosta de fazer por si. Essa descoberta pode acontecer em experiências pequenas, sem precisar acertar de primeira.'
+];
+const barriers=[
+'Você apontou que seus pensamentos voltam para alguém. Experimente notar o que espera encontrar nessa pessoa, sem exigir que a saudade desapareça para cuidar de você.',
+'Você também apontou que as vontades dos outros vêm primeiro. Observe uma escolha cotidiana em que seja possível incluir sua preferência.',
+'Você apontou pouco tempo ou energia. O cuidado precisa caber nessa realidade; pode ser breve, simples ou envolver pedir apoio.',
+'Você apontou não saber por onde começar. Escolher uma experiência pequena, que possa ajustar depois, já oferece algo concreto para observar.'
+];
+const deepQuestions=[
+['Quando a saudade aparece, de que acolhimento você sente falta — e onde mais poderia encontrá-lo?','Que vontade sua continua existindo, mesmo nos dias em que a saudade ocupa mais espaço?','O que você precisa considerar sobre si, além da saudade, antes de fazer uma escolha?','Se nenhuma decisão sobre essa pessoa fosse necessária hoje, que cuidado você se permitiria?'],
+['Quem poderia ouvir o que você sente falta de viver, sem dizer o que você deveria querer?','Qual vontade você gostaria de retomar, mesmo que ninguém mais se interessasse por ela?','Que preferência sua você gostaria de levar mais a sério nesta semana?','O que você poderia retomar aos poucos, sem cobrar de si uma mudança inteira?'],
+['Além de uma relação amorosa, em quais vínculos você encontra espaço para ser ouvida?','Que parte da sua vida você gostaria de cultivar, esteja ou não em uma relação?','Quais necessidades suas precisariam continuar tendo lugar em uma relação?','Que parte da sua vida pode receber cuidado hoje, mesmo sem saber quando uma relação virá?'],
+['Em quais momentos você se sente à vontade para falar do que realmente quer?','Que gosto seu você teria curiosidade de explorar sem precisar ser boa nisso?','Que pequena escolha recente fez sentido para você, independentemente da aprovação de alguém?','O que você gostaria de observar em si, com curiosidade e sem pressa de concluir?']
+];
+const steps=[
+'Escolha uma atividade de que gosta — ou algo simples que tenha curiosidade de experimentar. Reserve um espaço possível e, depois, perceba como foi fazer essa escolha por você.',
+'Complete a frase: “Em uma escolha desta semana, eu gostaria de respeitar…”. Pode ser uma preferência, um tempo de descanso ou um limite. Primeiro, dê nome a isso.',
+'Pense em alguém com quem costuma se sentir à vontade. Se fizer sentido, proponha uma conversa ou um encontro possível. Perceba de que tipo de companhia você precisa.',
+'Escreva três frases, só para você: “Hoje eu sinto…”, “Hoje eu preciso…” e “Um cuidado possível seria…”. Não é necessário encontrar uma solução enquanto escreve.'
+];
+const content=document.getElementById('quiz-content');
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function moveFocus(){const target=document.getElementById('question-title');target?.focus({preventScroll:true});if(matchMedia('(max-width:760px)').matches)document.getElementById('experimente').scrollIntoView({block:'start',behavior:'auto'});}
+function render(){
+ if(step===questions.length){renderResult();return;}
+ const q=questions[step];
+ content.innerHTML=`<div class="quiz-meta"><span>Pergunta ${step+1} de ${questions.length}</span><span class="free">Demonstração gratuita</span></div><div class="progress" aria-hidden="true">${questions.map((_,i)=>`<span class="${i<=step?'done':''}"></span>`).join('')}</div><form><fieldset><legend id="question-title" tabindex="-1">${esc(q.title)}</legend><p class="hint">Escolha o que mais se aproxima do seu momento.</p><div class="choices">${q.options.map((o,i)=>`<label class="choice"><input type="radio" name="answer" value="${i}" ${answers[step]===i?'checked':''} required><span>${esc(o)}</span></label>`).join('')}</div></fieldset><div class="actions">${step>0?'<button type="button" class="text-button" id="back">Voltar</button>':''}<button class="cta" type="submit" ${answers[step]===null?'disabled':''}>${step===questions.length-1?'Ver meu primeiro retrato':'Continuar'} <span class="arrow" aria-hidden="true">→</span></button></div><button type="button" class="text-button skip" id="skip">Prefiro pular esta pergunta</button></form><p class="privacy">Suas respostas ficam apenas nesta página e somem ao fechá-la.</p>`;
+ const form=content.querySelector('form');
+ form.addEventListener('change',()=>{form.querySelector('[type=submit]').disabled=false;});
+ form.addEventListener('submit',e=>{e.preventDefault();const chosen=form.querySelector('input:checked');if(!chosen)return;answers[step]=Number(chosen.value);step++;render();moveFocus();});
+ content.querySelector('#back')?.addEventListener('click',()=>{const chosen=form.querySelector('input:checked');if(chosen)answers[step]=Number(chosen.value);step--;render();moveFocus();});
+ content.querySelector('#skip').addEventListener('click',()=>{answers[step]=null;step++;render();moveFocus();});
+}
+function buildReport(){
+ const count=answers.filter(a=>a!==null).length;
+ const has=(i)=>answers[i]!==null;
+ const opening=[has(0)?feeling[answers[0]]:'',has(1)?needs[answers[1]]:''].filter(Boolean);
+ const observation=[has(2)?space[answers[2]]:'',has(3)?barriers[answers[3]]:''].filter(Boolean);
+ const reflection=has(0)&&has(1)?deepQuestions[answers[0]][answers[1]]:'Que cuidado faria sentido para você agora, considerando o que sente e o que precisa?';
+ const action=has(4)?steps[answers[4]]:'Se quiser, comece completando uma frase: “Hoje, eu gostaria de dar um pouco de espaço para…”. Você pode voltar às perguntas quando fizer sentido.';
+ return {count,opening,observation,reflection,action};
+}
+function renderResult(){
+ const r=buildReport();
+ content.innerHTML=`<div class="result"><div class="quiz-meta"><span>Seu primeiro retrato</span><span class="free">${r.count} de 5 respostas</span></div><h2 id="question-title" tabindex="-1">${r.count?'Existe espaço para você nessa história.':'Você pode começar no seu tempo.'}</h2><p class="result-lead">${r.count?'Este primeiro olhar reúne o que você escolheu compartilhar. Veja o que faz sentido para o seu momento.':'Você deixou as cinco perguntas em aberto. O convite abaixo é geral, sem uma leitura individual das suas respostas.'}</p>${r.opening.length?`<section class="report-section"><span class="section-label">01 / O QUE PEDE CUIDADO</span><h3>O que você sente. O que precisa.</h3>${r.opening.map(t=>`<p>${esc(t)}</p>`).join('')}</section>`:''}${r.observation.length?`<section class="report-section"><span class="section-label">02 / UM PONTO PARA OBSERVAR</span><h3>O lugar das suas vontades.</h3>${r.observation.map(t=>`<p>${esc(t)}</p>`).join('')}</section>`:''}<div class="reflection"><p class="label">Uma pergunta para ficar com você</p><p>${esc(r.reflection)}</p></div><section class="next-step"><span class="section-label">${answers[4]!==null?'O PEQUENO PASSO QUE VOCÊ ESCOLHEU':'UM CONVITE POSSÍVEL'}</span><h3>Experimente no seu ritmo.</h3><p>${esc(r.action)}</p></section><div class="offer"><h3>O que mais você pode perceber quando se escuta?</h3><p>Este primeiro olhar é um começo. No percurso completo, 15 perguntas no caminho escolhido aprofundam a reflexão sobre seus sentimentos, necessidades e limites. Ao final, um panorama individual ajuda a organizar essas respostas.</p><a class="cta" id="checkout" href="${checkout}">Conhecer meu percurso completo <span class="arrow" aria-hidden="true">→</span></a><p class="micro">Acesso pago. Veja o valor e as condições na página de compra.</p></div><details><summary>Rever minhas respostas</summary><ol>${questions.map((q,i)=>`<li><strong>${esc(q.title)}</strong><br>${answers[i]===null?'Você preferiu deixar em aberto.':esc(q.options[answers[i]])}</li>`).join('')}</ol></details><button type="button" class="text-button" id="edit">Editar minhas respostas</button><p class="fine">Uma leitura inicial baseada nas alternativas escolhidas. Não é um diagnóstico nem uma orientação sobre terminar ou retomar uma relação.</p></div>`;
+ content.querySelector('#edit').addEventListener('click',()=>{step=0;render();moveFocus();});
+ // Só parâmetros de campanha; nenhuma resposta é transmitida à página de compra.
+ const source=new URLSearchParams(location.search);const url=new URL(checkout);
+ for(const key of ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','src','sck']){const value=source.get(key);if(value)url.searchParams.set(key,value);}
+ content.querySelector('#checkout').href=url.toString();
+}
+document.getElementById('start').addEventListener('click',e=>{e.preventDefault();document.getElementById('experimente').scrollIntoView({block:'start',behavior:'auto'});document.getElementById('question-title')?.focus({preventScroll:true});});
+render();
+</script>
 </body>
 </html>
